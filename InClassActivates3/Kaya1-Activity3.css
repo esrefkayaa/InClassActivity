@@ -1,0 +1,59 @@
+.advertisement
+{
+	width:100px;
+    height:150px; 
+    border-color:black;
+    border-width:2px; 
+    background-color:gray; 
+    color:white;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+.header {
+	display: flex;
+	align-items: center;
+  }
+
+.header .logo img {
+	margin-left: 130px;
+}
+
+.logo {
+	float: left;
+}
+
+.logo img{
+	width: 260px;
+	height:100px
+}
+
+.content{
+	width: 70%;
+	padding-bottom: 2px;
+	padding-right: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: large;
+	font-weight: 300;
+}
+
+.image{
+	float: left;
+	padding-bottom: 2px;
+	padding-right: 10px;
+}
+
+.image img{
+	width: 250px;
+	height: 250px;
+}
+
+.head{
+	
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 110px;
+	
+}
