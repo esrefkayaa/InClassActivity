@@ -1,0 +1,33 @@
+body {
+    margin: 6% 6%;
+}
+
+label,
+span {
+    margin-top: 10px;
+    display: inline-block;
+    width: 85px;
+}
+
+input {
+    width: 130px;
+}
+
+.container input,
+.container label {
+    width: auto;
+}
+
+select {
+    width: 70px;
+}
+
+#about {
+    vertical-align: top;
+    margin-top: 10px;
+}
+
+#sumbitbtn {
+    position: relative;
+    width: 60px;
+}
