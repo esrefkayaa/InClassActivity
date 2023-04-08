@@ -1,0 +1,27 @@
+body {
+    margin: 2% 2%;
+}
+
+label {
+    display: inline-block;
+    width: 85px;
+}
+
+input {
+    width: 130px;
+    box-sizing: border-box;
+}
+
+select {
+    width: 125px;
+}
+
+#to {
+    border: none;
+}
+
+#convertbtn {
+    width: auto;
+    position: relative;
+    margin: 8px 377px;
+}
