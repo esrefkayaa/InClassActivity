@@ -41,11 +41,11 @@
             $from_currency = $_POST['first_currency'];
             $to_currency = $_POST['second_currency'];
             $conversion_rate = $conversion_rates[$from_currency][$to_currency];
-            $result = $from * $conversion_rate;
+            $calculated_currency = $from * $conversion_rate;
         }
         ?>
         <label for="to">To:</label>
-        <input type="number" id="to" name="to" value="<?php echo isset($result) ? $result : '0'; ?>" readonly>
+        <input type="number" id="to" name="to" value="<?php echo isset($calculated_currency) ? $calculated_currency : '0'; ?>" readonly>
 
         <label for="currency">Currency:</label>
         <select id=second_currency name="second_currency">
