@@ -28,6 +28,9 @@ select {
 }
 
 #sumbitbtn {
-    position: relative;
-    width: 60px;
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
 }

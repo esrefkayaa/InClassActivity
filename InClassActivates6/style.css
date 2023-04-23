@@ -1,0 +1,9 @@
+#btn {
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    background: linear-gradient(to right, purple, black);
+    color: wheat;
+    border: none;
+    border-radius: 10px;
+}
