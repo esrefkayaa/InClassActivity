@@ -36,7 +36,6 @@ function displayScores() {
 		var row = table.insertRow(i);
 		var nameCell = row.insertCell(0);
 		var scoreCell = row.insertCell(1);
-
 		nameCell.textContent = names[i];
 		scoreCell.textContent = scores[i];
 	}
@@ -54,7 +53,6 @@ function addScore() {
 	} else {
 		names.push(name);
 		scores.push(score);
-
 		givenName.value = "";
 		givenScore.value = "";
 		givenName.focus();
