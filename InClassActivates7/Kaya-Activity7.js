@@ -7,7 +7,6 @@ window.onload = function () {
 	$("display_results").onclick = displayResults;
 	$("display_scores").onclick = displayScores;
 	$("add").onclick = addScore;
-
 	$("name").focus();
 };
 
@@ -22,39 +21,29 @@ function displayResults() {
 		}
 	}
 
-	var resultsDiv = $("results");
-	resultsDiv.innerHTML = "<h2>Results</h2><br/>" +
+	$("results").innerHTML = "<h2>Results</h2><br/>" +
 		"Average score is " + average.toFixed(2) + "<br/>" +
 		"Highest score is " + highest;
 }
 
 function displayScores() {
-	var table = $("scores_table");
-	table.innerHTML = "<h2>Scores</h2><br/>";
+	var html = '<tr>' + '<td>' + '<b> Name </b>' + '</td>' + '<td>' + '<b> Score </b>' + '</td>' + '</tr>'
 
-	for (var i = 0; i < names.length; i++) {
-		var row = table.insertRow(i);
-		var nameCell = row.insertCell(0);
-		var scoreCell = row.insertCell(1);
-		nameCell.textContent = names[i];
-		scoreCell.textContent = scores[i];
+	for (let i = 0; i < names.length; i++) {
+		html += '<tr>' + '<td>' + names[i] + '</td>' + '<td>' + scores[i] + '</td>' + '</tr>'
 	}
+
+	$("scores_table").innerHTML = "<h2>Scores</h2><br/>" + html;
 }
 
 function addScore() {
-
-	var givenName = $("name");
-	var givenScore = $("score");
-	var name = givenName.value.trim();
-	var score = Number(givenScore.value);
+	var name = $("name").value.trim();
+	var score = Number($("score").value);
 
 	if (score < 0 || score > 100 || name === "" || isNaN(score)) {
 		alert("You must enter a name and a valid score");
 	} else {
 		names.push(name);
 		scores.push(score);
-		givenName.value = "";
-		givenScore.value = "";
-		givenName.focus();
 	}
 }
