@@ -28,6 +28,7 @@ function displayResults() {
 =======
 
 	var highestName = scores.indexOf(highest);
+
 	$("results").innerHTML = "<h2>Results</h2><br/>" +
 		"Average score = " + average + "<br > "
 		+ "High score = " + names[highestName] + " with a score of " + scores[highestName];
