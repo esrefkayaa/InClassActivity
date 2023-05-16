@@ -20,10 +20,18 @@ function displayResults() {
 			highest = scores[i];
 		}
 	}
+<<<<<<< HEAD
 	var highestName = scores.indexOf(highest);
 	$("results").innerHTML = "<h2>Results</h2><br/>" +
 		"Average score = " + average + "<br > "
         	+ "High score = " + names[highestName] + " with a score of " + scores[highestName];
+=======
+
+	var highestName = scores.indexOf(highest);
+	$("results").innerHTML = "<h2>Results</h2><br/>" +
+		"Average score = " + average + "<br > "
+		+ "High score = " + names[highestName] + " with a score of " + scores[highestName];
+>>>>>>> 4d0dd28 (finished)
 }
 
 function displayScores() {
