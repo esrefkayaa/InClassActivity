@@ -1,0 +1,14 @@
+#formTable {
+    width: 25%;
+    margin: 2% 2%;
+}
+
+#btn {
+    margin-top: 10px;
+}
+
+table tr td input:invalid {
+    border: none;
+    border-radius: 7px;
+    outline: 2px solid rgb(204, 15, 15);
+}
