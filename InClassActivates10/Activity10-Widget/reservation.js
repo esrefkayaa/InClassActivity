@@ -1,9 +1,12 @@
 $(document).ready(function () {
 
 
+	$("#arrival_date").focus();
+	// datepicker widget
 	$("#arrival_date").datepicker({
 		maxDate: "+90D",
-		minDate: 0
+		minDate: 0,
+		dateFormat: "yy-mm-dd",
 	});
 
 	$("#tabs").tabs({
@@ -13,11 +16,8 @@ $(document).ready(function () {
 	});
 
 	$("#policies").click(function () {
-		// dialog for cancellation
-		$("#dialog").dialog({
-			modal: true
-		});
-	});
+		$("#dialog").dialog();
+	})
 
 	var emailPattern = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
 
