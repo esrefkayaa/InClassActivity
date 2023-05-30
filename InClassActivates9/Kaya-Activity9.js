@@ -20,6 +20,7 @@ $(document).ready(function () {
 			$("#caption, #image").fadeIn(1000);
 		});
 
+		// cancel the default action of the link
 		evt.preventDefault();
 	}); // end click
 
